@@ -1,0 +1,58 @@
+.grid-container {
+    display: grid;
+    /* Declaring number of rows you want. Here we want 4 rows */
+    grid-template-areas: 
+    'navsection navsection navsection navsection navsection navsection'
+    'sidemenua sidemenua bannersection bannersection bannersection sidemenub'
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+    'footer footer footer footer footer footer';
+}
+
+#navsection {
+    background-color: red;
+    grid-area: navsection;
+}
+
+li{
+    display: inline-block;
+}
+
+#bannersection {
+    background-color: purple;
+    grid-area: bannersection;
+}
+
+#maingallery {
+    background-color: green;
+    grid-area: maingallery;
+}
+
+#footer{
+    background-color: yellow;
+    grid-area: footer;
+}
+
+#sidemenua {
+    background-color: brown;
+    grid-area: sidemenua;
+}
+
+#sidemenub {
+    background-color: aqua;
+    grid-area: sidemenub;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        /* Declaring number of rows you want. Here we want 4 rows */
+        /* They appear in verrtical */
+        grid-template-areas: 
+        'navsection navsection navsection navsection navsection navsection'
+        'sidemenua sidemenua sidemenua sidemenua sidemenua sidemenua'
+        'bannersection bannersection bannersection bannersection bannersection bannersection'
+        'sidemenub sidemenub sidemenub sidemenub sidemenub sidemenub'
+        'maingallery maingallery maingallery maingallery maingallery maingallery'
+        'footer footer footer footer footer footer';
+    }
+}
